@@ -15,7 +15,7 @@ dependencyManagement {
 }
   
 dependencies {
- // feign client
-  implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
+	// feign client
+	implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
 }
 ```  
