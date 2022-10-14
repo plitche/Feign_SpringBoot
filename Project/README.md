@@ -6,13 +6,19 @@
 
 ![image](https://user-images.githubusercontent.com/70326085/195629873-f306f05d-6169-4124-8735-6a4dab3d178b.png)
 
-## Dependencies setting(Library import)
+## Dependencies setting(Library import)  
 ```text
+ext {
+	set('springCloudVersion', "2021.0.3")
+}  
+  
 dependencyManagement {
 	imports {
-		mavenBom 'org.springframework.cloud:spring-cloud-dependencies:Greenwich.RELEASE'
+		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
 	}
 }
+  
+apply plugin: "io.spring.dependency-management"  
   
 dependencies {
 	// feign client
