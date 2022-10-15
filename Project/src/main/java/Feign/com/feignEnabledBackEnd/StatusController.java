@@ -16,7 +16,6 @@ public class StatusController {
     @GetMapping("/status")
     public SpaceStation status() {
         SpaceStation spaceStation = spaceStationClient.findSpaceStation(new Random().nextInt());
-        System.out.println("spaceStation = " + spaceStation);
         return spaceStation;
     }
 
