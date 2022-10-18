@@ -16,6 +16,4 @@ public class PracController {
     public ProductDTO findProduct(@PathVariable String name) {
         return productService.getProductByName(name);
     }
-
-
 }

@@ -11,4 +11,12 @@ public class MemberController {
     public MemberDTO getMemberInfo(@PathVariable String message) {
         return new MemberDTO("plitche", "male", 31, message);
     }
+
+    @GetMapping("/getError")
+    public int getError() {
+        String data = null;
+        return Integer.parseInt(data);
+
+        //return 1;
+    }
 }

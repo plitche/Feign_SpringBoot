@@ -26,4 +26,9 @@ public class FeignClientController {
     public Map<Object, String> getMemberInfo(@PathVariable String message) {
         return feignMemberClientInterface.getMemberInfo(message);
     }
+
+    @GetMapping("/getError")
+    public int getError() {
+        return feignMemberClientInterface.getError();
+    }
 }

@@ -12,4 +12,7 @@ public interface FeignMemberClientInterface {
     @RequestMapping("/getMemberInfo/{message}")
     Map<Object, String> getMemberInfo(@PathVariable String message);
 
+    @RequestMapping("/getError")
+    int getError();
+
 }
