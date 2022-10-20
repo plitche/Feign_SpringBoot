@@ -35,3 +35,9 @@ dependencies {
 	implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
 }
 ```  
+
+# Arragement
+- Localhost:8080 Feign Client에서 Localhost:9090 Controller를 호출했을 때에 통신은 8080 Controller method를 호출한 Network 통신 1건만 발생한다.
+- Localhost:9090에서 오류가 날 경우에 8080에서는 500 통신에러가 Error가 발생한다.
+- localhost:8080에서 없는 mapping 값으로 feign client를 호출해도 404 status가 아니라 500대 에러가 발생한다.
+
